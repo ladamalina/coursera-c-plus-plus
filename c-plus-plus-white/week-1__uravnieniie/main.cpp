@@ -12,6 +12,17 @@ using namespace std;
 int main() {
     double a, b, c;
     cin >> a >> b >> c;
+
+    if (a == 0.0) {
+        if (b == 0.0) {
+            return 0;
+        } else {
+            double x1 = (-1*c) / b;
+            cout << x1 << endl;
+            return 0;
+        }
+    }
+
     double d = b*b - 4*a*c;
     if (d < 0) {
         return 0;
